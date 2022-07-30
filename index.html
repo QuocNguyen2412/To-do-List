@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <section class="one">
+        <span>Quote</span>
+    </section>
+    
+    <section class="two">
+        <h1>To Do List</h1>
+
+        <div>
+            <ul>
+                <li> Thing 1</li>
+                <li> Thing 2</li>
+                <li> Thing 3</li>
+                <li> Thing 4</li>
+                <li> Thing 5</li>
+                <li> Thing 6</li>
+            </ul>
+        </div>
+        
+      </section>
+
+      
+    <main id="app">
+        <progress id="js-progress" value="0"></progress>
+        <div class="progress-bar"></div>
+        <div class="timer">
+          <div class="button-group mode-buttons" id="js-mode-buttons">
+            <button
+              data-mode="pomodoro"
+              class="button active mode-button"
+              id="js-pomodoro"
+            >
+              Pomodoro
+            </button>
+            <button
+              data-mode="shortBreak"
+              class="button mode-button"
+              id="js-short-break"
+            >
+              Short break
+            </button>
+            <button
+              data-mode="longBreak"
+              class="button mode-button"
+              id="js-long-break"
+            >
+              Long break
+            </button>
+          </div>
+          <div class="clock" id="js-clock">
+            <span id="js-minutes">25</span>
+            <span class="separator">:</span>
+            <span id="js-seconds">00</span>
+          </div>
+          <button class="main-button" data-action="start" id="js-btn">
+            Start
+          </button>
+        </div>
+      </main>
+      <div class="hidden">
+        <audio src="backtowork.mp3" data-sound="pomodoro"></audio>
+        <audio src="break.mp3" data-sound="shortBreak"></audio>
+        <audio src="break.mp3" data-sound="longBreak"></audio>
+      </div>
+      <script src="index.js"></script>
+</body>
+</html>
