@@ -37,18 +37,29 @@ h1, main{
     margin: 0;
     padding: 0;
   }
+
+
+.clock {
+  border: 1px black solid;
+  display: flex;
+  justify-content: center;
+}
+
+.main-button{
+  display: flex;
   
+}
   /* :root {
     --pomodoro: hsl(223, 25%, 40%);
     --shortBreak: hsl(48, 23%, 40%);
     --longBreak: hsl(105, 16%, 40%);
-  }
-   */
+  } */
+  
 
 
-/* 
+ 
 
-  body {
+  /* body {
     background-color: var(--pomodoro);
     transition: background-color 1s ease;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -139,9 +150,9 @@ h1, main{
   .hidden {
     display: none;
   }
-  
+   */
   @media screen and (max-width: 550px) {
     .clock {
       font-size: 8rem;
     }
-  } */
+  } 

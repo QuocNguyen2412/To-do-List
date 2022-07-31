@@ -1,3 +1,17 @@
+let input = document.createElement("keyBoard");
+input.setAttribute('type', 'text');
+
+let parent = document.getElementById("parentDiv");
+parent.appendChild(input);
+
+// const keyBoard = document.querySelector('.keyBoard')
+
+// keyBoard.addEventListener('keydown', e =>{
+//   if (e.keyCode === 13){
+//    console.log(document.getElementById("keyBoard").value)
+//   }
+// })
+
 const timer = {
     pomodoro: 25,
     shortBreak: 5,
@@ -98,7 +112,7 @@ const timer = {
     switchMode(mode);
     stopTimer();
   }
-  
+   
   document.addEventListener('DOMContentLoaded', () => {
     switchMode('pomodoro');
   });
